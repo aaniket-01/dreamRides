@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f4f4f4;
+}
+header {
+  background: linear-gradient(90deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+header nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #e74c3c;
+}
+.hero {
+  /* background-image: url("./images/car3.jpeg"); */
+  background-position: center;
+  background-size: cover;
+  /* height: 100vh; */
+  max-width: 1500px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ecf0f1;
+  text-align: center;
+  background-size: cover;
+}
+.hero video {
+  max-width: 100%;
+  margin-left: 150px;
+  border-radius: 20px;
+  /* max-height: 70vh; */
+}
+
+.car-gallery {
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  /* border: 1px solid black; */
+  margin-left: 100px;
+}
+
+.car-gallery .cars {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid coral;
+  padding: 20px; */
+}
+
+.car-gallery .cars img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  color: #2c3e50;
+  padding-bottom: 270px;
+  margin-right: 90px;
+  text-shadow: 4px 4px solid #34495e;
+}
+
+.hero-video {
+  max-width: 100%;
+  align-content: center;
+  padding: 50px;
+  display: flex;
+}
+
+.hero-video video {
+  max-width: 50%;
+}
+
+.hero-video .cars {
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.hero-video .cars img {
+  width: 300px;
+}
+
+.gallery-heading {
+  max-width: 100%;
+  text-align: center;
+  /* background: linear-gradient(90deg, #2c3e50, #34495e); */
+}
+
+.gallery-heading .heading {
+  /* padding: 20px; */
+  font-size: 30px;
+  color: black;
+  margin-bottom: 60px;
+}
+
+.gallery-heading .heading h1 {
+  opacity: 0.8;
+  font-weight: bolder;
+  margin-right: 65px;
+}
+
+.container-journal {
+  display: flex;
+  gap: 50px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.container-journal .left-side img {
+  width: 800px;
+  height: 500px;
+  margin-left: 150px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.container-journal .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 30%;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+
+.container-journal .right-side .right-side-item {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.container-journal .right-side .right-side-item img {
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 70px;
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 5%;
+  }
+
+  header nav {
+    margin-top: 15px;
+  }
+
+  header nav a {
+    margin: 0 8px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 15px;
+  }
+
+  .hero video {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .gallery-heading .heading {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .gallery-heading .heading h1 {
+    margin-right: 0;
+  }
+
+  .car-gallery {
+    margin-left: 0;
+    padding: 0 15px;
+  }
+
+  .car-gallery .cars {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .car-gallery .cars img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .container-journal {
+    flex-direction: column;
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .container-journal .left-side img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .container-journal .right-side {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .container-journal .right-side .right-side-item {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .container-journal .right-side .right-side-item img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .container-journal .right-side .right-side-item h3 {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 15px;
+  }
+}
